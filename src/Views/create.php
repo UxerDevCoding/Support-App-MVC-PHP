@@ -9,9 +9,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>   
-        <div class="container mt-5">   
+    <div class="container mt-5">   
         <h2>Support App</h2>
-        <h5 class= "badge rounded-pill bg-dark mt-2">Add a request</h5> 
+        <h5 class= "badge rounded-pill bg-primary">Add a request</h5> 
         <form action="?action=store" method="post">
             <div class="col-4">
                 <label class="form-label mt-3" for="topic">Topic</label>
@@ -30,7 +30,7 @@
                 <textarea class="form-control" type="text" name="description" id="description" required></textarea></br>
                 <div class="d-grid gap-2 col-3 ">
                 <input type="submit" class="btn btn-primary" value="Add">
-            </div>
+                </div>
             </div>        
         </form> 
     </div>   
