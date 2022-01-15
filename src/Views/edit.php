@@ -5,16 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="web\css\style.css">
-    <title>Base MVC with PHP</title>
+    <title>Support App - Edit</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
 </head>
 <body>
-    
-    
-    
-
-
     <div class="container mt-5">   
         <h2>Support App</h2>
         <h5 class= "badge rounded-pill bg-success">Edit the request</h5> 
@@ -34,12 +29,12 @@
             <div class="col-4">
                 <label for="inputDescription" class="form-label">Description</label>
                 <textarea class="form-control" type="text" name="description" id="description" required><<?=$data[0]->getDescription()?></textarea></br>
-                <div class="d-grid gap-2 col-3 ">
-                <input type="submit" class="btn btn-success" value="Update">
+                <div class="d-grid gap-2 d-md-block">
+                    <a href="?action=home"><button type="submit" class="btn btn-success" value="Update">Update</button></a>
+                    <a href="?action=home"><button class="btn btn-secondary">Cancel</button></a>   
                 </div>
             </div>        
         </form> 
     </div>   
-
 </body>
 </html>

@@ -28,11 +28,15 @@
             <div class="col-4">
                 <label for="inputDescription" class="form-label">Description</label>
                 <textarea class="form-control" type="text" name="description" id="description" required></textarea></br>
-                <div class="d-grid gap-2 col-3 ">
-                <input type="submit" class="btn btn-primary" value="Add">
+                <div class="d-grid gap-2 d-md-block">
+                    <button type="submit" class="btn btn-primary" value="Add">Add</button>
+                    <a href="?action=home"><button class="btn btn-secondary">Cancel</button></a>   
                 </div>
-            </div>        
+            </div> 
+            
         </form> 
+         
     </div>   
+       
 </body>
 </html>
