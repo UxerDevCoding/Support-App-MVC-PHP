@@ -24,11 +24,11 @@
             </div>
             <div class="col-4">
                 <label class="form-label" for="user_name">User name</label>
-                <input type="text" class="form-control" name="user_name" id="user_name" value=<?=$data[0]->getUserName()?>required>
+                <input type="text" class="form-control" name="user_name" id="user_name" value=<?=$data[0]->getUserName()?>>
             </div></br>
             <div class="col-4">
                 <label for="inputDescription" class="form-label">Description</label>
-                <textarea class="form-control" type="text" name="description" id="description" required><<?=$data[0]->getDescription()?></textarea></br>
+                <textarea class="form-control" type="text" name="description" id="description"><?=$data[0]->getDescription()?></textarea></br>
                 <div class="d-grid gap-2 d-md-block">
                     <a href="?action=home"><button type="submit" class="btn btn-success" value="Update">Update</button></a>
                     <a href="?action=home"><button class="btn btn-secondary">Cancel</button></a>   
@@ -38,3 +38,5 @@
     </div>   
 </body>
 </html>
+
+<?php include './src/Views/layouts/footer.php'; ?>

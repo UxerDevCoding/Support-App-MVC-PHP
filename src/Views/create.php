@@ -40,3 +40,5 @@
        
 </body>
 </html>
+
+<?php include './src/Views/layouts/footer.php'; ?>
